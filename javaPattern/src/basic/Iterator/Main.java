@@ -5,7 +5,7 @@ package basic.Iterator;
 */
 public class Main {
 	public static void main(String[] args) {
-		BookShelf bs = new BookShelf(4);
+		BookShelf bs = new BookShelf(5);
 		bs.appendBook(new Book("book1"));
 		bs.appendBook(new Book("book2"));
 		bs.appendBook(new Book("book3"));
@@ -26,5 +26,10 @@ public class Main {
 		while (it.hasNext()) {
 			System.out.println(((Book) it.next()).getName());
 		}
+		
+		/*
+		연습문제) 예제에선 최초에 지정한 서가의 크기를 초과할 수 없다.
+		배열이 아니라 ArrayList를 사용해서 서가의 크리를 초과해도 추가할 수 있도록 변경하시오.
+		*/
 	}
 }
