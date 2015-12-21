@@ -1,4 +1,4 @@
-package basic.Iterator;
+package basic.iterator;
 
 /**
 * 집합체 인터페이스

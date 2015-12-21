@@ -1,4 +1,4 @@
-package basic.Iterator;
+package basic.iterator;
 
 /**
 * Book 클래스

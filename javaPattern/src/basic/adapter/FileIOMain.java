@@ -1,4 +1,4 @@
-package basic.Adapter;
+package basic.adapter;
 
 public class FileIOMain {
 	public static void main(String[] ars) throws Exception {

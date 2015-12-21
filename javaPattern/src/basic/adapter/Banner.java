@@ -1,4 +1,4 @@
-package basic.Adapter;
+package basic.adapter;
 
 /**
 * 미리 제공되어있는 강조 출력용 배너클래스

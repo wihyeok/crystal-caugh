@@ -1,4 +1,5 @@
-package basic.FactoryMethod.framework;
+package basic.factory.framework;
+
 
 /**
 * Factory 클래스는 Tempalate Method 패턴이 사용되고 있다.
@@ -10,12 +11,13 @@ package basic.FactoryMethod.framework;
 * Factory Method 패턴에서 인스턴스를 생성할 때 Template Method 패턴을 사용
 */
 public abstract class Factory {
-	public final Product create(String owner) {
-		Product p = createProduct(owner);
-		registerProduct(p);
-		return p;
-	}
-	
-	protected abstract Product createProduct(String owner);
-	protected abstract void registerProduct(Product product);
+    public final Product create(String owner) {
+        Product p = createProduct(owner);
+        registerProduct(p);
+        return p;
+    }
+
+    protected abstract Product createProduct(String owner);
+    protected abstract void registerProduct(Product product);
 }
+

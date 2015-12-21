@@ -1,4 +1,4 @@
-package basic.TemplateMethod;
+package basic.templateMethod;
 
 public class CharDisplay extends AbstractDisplay {
 	private char ch;

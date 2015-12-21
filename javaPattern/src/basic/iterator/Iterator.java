@@ -1,4 +1,4 @@
-package basic.Iterator;
+package basic.iterator;
 
 /**
 * Iterator 인터페이스

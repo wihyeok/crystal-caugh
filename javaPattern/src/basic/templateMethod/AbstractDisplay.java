@@ -1,4 +1,4 @@
-package basic.TemplateMethod;
+package basic.templateMethod;
 
 public abstract class AbstractDisplay {
 	/* 하위 클래스에 구현을 맡기는 추상 메소드 */

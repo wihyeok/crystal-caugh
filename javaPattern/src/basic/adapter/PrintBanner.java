@@ -1,4 +1,4 @@
-package basic.Adapter;
+package basic.adapter;
 
 /**
 * 어댑터 역할 수행

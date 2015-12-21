@@ -1,4 +1,4 @@
-package basic.Adapter;
+package basic.adapter;
 
 import java.util.*;
 import java.io.*;

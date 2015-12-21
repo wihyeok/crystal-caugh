@@ -1,4 +1,4 @@
-package basic.Adapter;
+package basic.adapter;
 
 /**
 * 왜 Adapter패턴을 사용하는가?

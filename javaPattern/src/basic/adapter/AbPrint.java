@@ -1,4 +1,4 @@
-package basic.Adapter;
+package basic.adapter;
 
 public abstract class AbPrint {
 	public abstract void printWeak();

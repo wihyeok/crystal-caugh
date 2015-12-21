@@ -1,4 +1,4 @@
-package basic.Adapter;
+package basic.adapter;
 
 /**
 * 위임을 사용한 Adapter 패턴

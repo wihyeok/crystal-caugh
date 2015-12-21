@@ -1,4 +1,4 @@
-package basic.Iterator;
+package basic.iterator;
 
 /**
 * BookShelfIterator 클래스

@@ -1,4 +1,4 @@
-package basic.Adapter;
+package basic.adapter;
 
 /**
 * Print 인터페이스
