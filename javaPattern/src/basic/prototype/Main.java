@@ -14,6 +14,15 @@ import basic.prototype.framework.Manager;
  *  - 2. 클래스로부터 인스턴스 생성이 어려운 경우
  *  - 3. framework와 생성할 인스턴스를 분리하고 싶은 경우
  *
+ * 관련패턴
+ * - Flyweight 패턴 :
+ *  하나의 인스턴스를 복수의 장소에서 공유해서 이용
+ * - Memento 패턴 :
+ *  스냅샷과 undo를 실행하기 위해 현재의 인스턴스 상태를 저장
+ * - Composite 패턴 및 Decorator 패턴
+ * - Command 패턴 :
+ *  Command 패턴에 등장하는 명령을 복제하고 싶은 경우 Prototype 패턴을 사용
+ *
  *
  */
 public class Main {
