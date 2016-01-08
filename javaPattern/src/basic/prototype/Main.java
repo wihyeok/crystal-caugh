@@ -1,5 +1,10 @@
 package basic.prototype;
 
+import basic.prototype.framework.Product;
+import basic.prototype.anonymous.MessageBox;
+import basic.prototype.anonymous.UnderlinePen;
+import basic.prototype.framework.Manager;
+
 /**
  * 인스턴스를 작성할 때 new Something()이라는 식을 이용하여 반드시 new를 사용하여 클래스 이름을 지정해야함.
  *
@@ -12,5 +17,21 @@ package basic.prototype;
  *
  */
 public class Main {
+	public static void main(String[] args) {
+		Manager manager = new Manager();
+		UnderlinePen upen = new UnderlinePen('~');
+		MessageBox mbox = new MessageBox('*');
+		MessageBox sbox = new MessageBox('/');
+		manager.register("strong message", upen);
+		manager.register("warning box", mbox);
+		manager.register("slash box", sbox);
 
+		Product p1 = manager.create("strong message");
+		p1.use("Hello, world");
+		Product p2 = manager.create("warning box");
+		p2.use("Hello, world");
+		Product p3 = manager.create("slash box");
+		p3.use("Hello, world");
+
+	}
 }
