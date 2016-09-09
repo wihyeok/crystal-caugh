@@ -12,7 +12,7 @@ package basic.bridge;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Display d1 = new Display(new StringDisplayImpl("Hello, Korea."));
 
 	}
 
