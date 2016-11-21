@@ -1,9 +1,11 @@
+package basic.bridge;
+
 public class StringDisplayImpl extends DisplayImpl {
 	private String string;
 	private int width;
 	public StringDisplayImpl(String string) {
 		this.string = string;
-		this.width = string.geBytes().length;
+		this.width = string.getBytes().length;
 	}
 	
 	public void rawOpen() {

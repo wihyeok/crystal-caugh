@@ -1,3 +1,5 @@
+package basic.bridge;
+
 public class Display {
 	private DisplayImpl impl; 
 	public Display(DisplayImpl impl) {
