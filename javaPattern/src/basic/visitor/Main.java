@@ -7,7 +7,6 @@ package basic.visitor;
  * 그런데 심지어 자기자신(this)를 넘겨주어 new ListVisitor()를 argument로 넘겨도 된다.
  * 또한 visit(Directory) 메소드는 내부적으로 다시 Entry 클래스를 상속받은 Directory 클래스의 accept를 호출하고있다.
  * 그런데 this가 argument로 넘어가고 있다.
- * 이 얼마나 아름다운 재귀시스템이란말인가...
  * 
  * File 클래스나 Directory 클래스의 accept 메소드 내부에서 호출하고있는 Visitor.visit(this)는 둘 중
  * 어느 클래스에서 사용하건 간에 Visitor 클래스를 상속받아 구현하고 있는 클래스에서 알아서 처리해준다.
