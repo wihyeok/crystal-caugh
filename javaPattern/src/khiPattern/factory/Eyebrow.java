@@ -1,4 +1,4 @@
-package khiPattern;
+package khiPattern.factory;
 
 public class Eyebrow extends Cosmetic{
 
