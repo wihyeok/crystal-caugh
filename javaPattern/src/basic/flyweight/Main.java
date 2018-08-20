@@ -10,14 +10,24 @@ public class Main {
 	 */
 
 	public static void main(String[] args) {
-		if (args.length == 0) {
-			System.out.println("Usage: java Main digits");
-			System.out.println("Example: java Main 1212123");
-			System.exit(0);
-		}
+//		if (args.length == 0) {
+//			System.out.println("Usage: java Main digits");
+//			System.out.println("Example: java Main 1212123");
+//			System.exit(0);
+//		}
 		
-		BigString bs = new BigString(args[0]);
+		BigString bs = new BigString("1001");
 		bs.print();
+		
+		TokenString ts = new TokenString("0-1-0-1");
+		ts.print();
+		
+		System.out.println(bs.getBigChar(0));
+		
+		System.out.println(bs.getBigChar(0).equals(ts.getBigChar(0)));
+		System.out.println(bs.getBigChar(1).equals(ts.getBigChar(1)));
+		System.out.println(bs.getBigChar(2).equals(ts.getBigChar(2)));
+		System.out.println(bs.getBigChar(3).equals(ts.getBigChar(3)));
 	}
 
 }

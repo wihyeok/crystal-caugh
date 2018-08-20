@@ -15,5 +15,13 @@ public class BigString {
 			bigChars[i].print();
 		}
 	}
+	
+	public BigChar getBigChar(int index) {
+		if (bigChars.length > index) {
+			return bigChars[index];
+		} else {
+			return null;
+		}
+	}
 
 }
