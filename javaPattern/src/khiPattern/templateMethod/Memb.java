@@ -1,4 +1,4 @@
-package templateMethod;
+package khiPattern.templateMethod;
 
 import java.util.ArrayList;
 
