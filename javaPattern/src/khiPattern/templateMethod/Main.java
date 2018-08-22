@@ -1,4 +1,4 @@
-package templateMethod;
+package khiPattern.templateMethod;
 
 public class Main {
 
