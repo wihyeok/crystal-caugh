@@ -1,16 +1,19 @@
 package khiPattern.abstractFactory;
 
 /**
- * 추상팩토리 메드는 말로는 이해시켜드리기가 조금 까다로운 패턴입니다.
- * 이건 내일 잘 되어있는 예제를 알려드릴께요
- * 추상팩토리 패턴의 정리는 제가 내일까지 정리해서 올리겠습니다.
- *
+  팩토리 메서드 : 객체를 클래스에서 생성시킴 
+  ab 팩토리 : 객체를 객체에서 생성시킴 ( 구체화한 factory클래스에서 create함수에서 객체 생성 ) 
+
+
+ - 단점
+객체 구성 부분이 추가 되면 추상부분부터 수정해서 추가해 줘야 한다.
+
  */
 
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		
 	}
 
