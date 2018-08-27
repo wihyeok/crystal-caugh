@@ -1,14 +1,12 @@
 package khiPattern.templateMethod;
 
+/**
+ * 
+ * !템플릿 메서드 패턴은 전체적으로는 동일하지만 부분적으로는 다른 구문으로 구성된 메서드의 코드 중복을 최소화할 때 유용합니다.
+ * 따라서 바뀌는 것과 바뀌지 않는 것을 분리하는 것이 중요합니다.
+ *
+ */
 
-/*
-templateMethod 따라해보고 여기에 계속 붙여서 다른패턴도 적용해볼려구요!!! 
-
-그런데 withdraw랑 deposit에 
-코드가 중복대자나요...저건 따로 안빼는게 맞는가....ㅠㅠㅠ
-
-
-*/
 public class Main {
 
 	public static void main(String[] args) {
@@ -17,15 +15,17 @@ public class Main {
 		Memb hyein = new Memb("김혜인","cns");
 		
 		
-	
-		WaetBal cnsWaet	= new CnsWaet();	
-		cnsWaet.create(10000, "김혜인");
+		Factory waetFactory = new WaetFactory();
 		
-		WaetBal sdsWaet	= new SDSWaet();	
-		sdsWaet.create(10000, "김혜인");
+		WaetBal cnsWaetFromAbFactory = waetFactory.create("CNS");
+		WaetBal sdsWaetFromAbFactory = waetFactory.create("SDS");
+		
+		
+		cnsWaetFromAbFactory.create(10000, "김혜인");
+		sdsWaetFromAbFactory.create(10000, "김혜인");
 	 
-		hyein.waetList.add(cnsWaet);
-		hyein.waetList.add(sdsWaet);
+		hyein.waetList.add(cnsWaetFromAbFactory);
+		hyein.waetList.add(sdsWaetFromAbFactory);
 		
 		
 		
