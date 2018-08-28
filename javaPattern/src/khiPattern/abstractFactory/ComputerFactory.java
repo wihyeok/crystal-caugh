@@ -1,8 +1,13 @@
 package khiPattern.abstractFactory;
 
-public interface ComputerFactory {
+public class ComputerFactory {
 
-	public Monitor makeMoniter();
-	public Speaker makeSpeaker();
-	public boolean hasSSD();
+	public static Monitor getMonitor(ComputerABFactory computerABFactory) {
+		return computerABFactory.makeMonitor();
+	}
+	
+	
+	public static Speaker getSpeaker(ComputerABFactory computerABFactory) {
+		return computerABFactory.makeSpeaker();
+	}
 }

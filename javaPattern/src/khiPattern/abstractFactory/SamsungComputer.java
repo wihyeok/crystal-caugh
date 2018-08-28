@@ -1,11 +1,10 @@
 package khiPattern.abstractFactory;
 
-public class LGcomputer extends Computer {
+public class SamsungComputer extends Computer{
 
 	ComputerABFactory computerfactory;
 	
-	
-	
+	 
 	@Override
 	void makeComputer() {
 		// TODO Auto-generated method stub
@@ -17,9 +16,8 @@ public class LGcomputer extends Computer {
 		speaker = computerfactory.makeSpeaker();
 		System.out.println("컴퓨터조립 완료");
 		
-	
 	}
-
+	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

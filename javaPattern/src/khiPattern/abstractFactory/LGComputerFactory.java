@@ -1,17 +1,31 @@
 package khiPattern.abstractFactory;
 
-public class LGComputerFactory implements ComputerFactory{
+public class LGComputerFactory implements ComputerABFactory{
 
+	
+	private String name;
+    private String price;
+	
+    
+    
+	public LGComputerFactory(String name, String price) {
+		super();
+		this.name = name;
+		this.price = price;
+	}
+	
+	
+	
 	@Override
-	public Monitor makeMoniter() {
+	public Monitor makeMonitor() {
 		// TODO Auto-generated method stub
-		return new LGMonitor();
+		return new LGMonitor(name, price);
 	}
 
 	@Override
 	public Speaker makeSpeaker() {
 		// TODO Auto-generated method stub
-		return new LGspeakter();
+		return new LGspeakter(name, price);
 	}
 
 	@Override

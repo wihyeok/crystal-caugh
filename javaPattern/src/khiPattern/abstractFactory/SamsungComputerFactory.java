@@ -1,9 +1,19 @@
 package khiPattern.abstractFactory;
 
-public class SamsungComputerFactory implements ComputerFactory {
+public class SamsungComputerFactory implements ComputerABFactory {
+
+	private String name;
+    private String price;
+	
+	
+	public SamsungComputerFactory(String name, String price) {
+		super();
+		this.name = name;
+		this.price = price;
+	}
 
 	@Override
-	public Monitor makeMoniter() {
+	public Monitor makeMonitor() {
 		// TODO Auto-generated method stub
 		return new SamsungMonitor();
 	}

@@ -1,6 +1,12 @@
 package khiPattern.abstractFactory;
 
-public interface Monitor {
+public abstract class Monitor {
 
-	public String getName();
+	public abstract String getName();
+	public abstract String getPrice();
+
+	public String toString() {
+		return "모니터 모델 : " + getName() + ", 모니터 이름 : " + getPrice();
+	}
+
 }
