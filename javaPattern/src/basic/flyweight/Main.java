@@ -8,8 +8,12 @@ public class Main {
 	 *  - 인스턴스를 가능한 대로 공유시켜서 쓸데없이 new하지 않도록 한다.
 	 * 
 	 * 한 개의 인스턴스를 공유할 때 주의점
-	 * 1. 작은 변경이라도 영항범위가 커질 수 있다. -> 여러 장소에 공유시켜야할 정보만 Flyweight 역할에게 제공
+	 * 1. 작은 변경이라도 공유하고 있는 것을 변경하면 영항범위가 커질 수 있다. -> 여러 장소에 공유시켜야할 정보만 Flyweight 역할에게 제공
 	 * 
+	 * 공유시키는 정보(intrinsic한 정보) - 인스턴스를 어디에서 가지고 있더라도 어떠한 상황에서도 변하지 않는 정보
+	 *  -> 장소나 상황에 의존하지 않기 때문에 공유할 수 있다(BigChar)
+	 * 공유시키지 않는 정보(extrinsic한 정보) - 인스턴스를 두는 장소 및 상황에 따라서 변화하는 정보
+	 *  -> 장소나 상황에 의존하기 때문에 공유할 수 없다(BigString)
 	 * 
 	 */
 
@@ -22,6 +26,7 @@ public class Main {
 		
 		BigString bs = new BigString("1001");
 		bs.print();
+		System.out.println(Runtime.getRuntime().totalMemory() + Runtime.getRuntime().freeMemory()); 
 		
 		TokenString ts = new TokenString("0-1-0-1");
 		ts.print();
