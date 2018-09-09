@@ -1,0 +1,14 @@
+1. DefaultException에서 110 Line에 cause라는걸 넣던데 Throwable타입으로... cause를 구분 및 보존하고 싶을 경우에 쓰이던데
+무슨말인지 모르겠습니다 ㅠㅠㅠㅠ
+
+2. CommonEbc에서 DevonException으로 throw하고 CommonEbc를 호출하는 곳에서는 LException을 throw하는데
+CommonEbc를 호출하는 곳에서 DefaultException을 던지기위해 둘다 포함하는 LException을 던지는 건가여!!?/ 
+그리고 암호화 모듈을 호출하는 곳에서 에러처리하는것맞나요!?!?
+
+3. MTransKeySrvLib가 임포트되어있던데 이게 키패트보안업체에서 제공해주는거에요????
+
+4. MTK_GetEncryptedPacket(String packet, StringBuilder secureKey, StringBuilder cipherString) 
+여기서 packet에서 값을 빼던데 그게 우리가 주는 값이고 그 값으로 secureKey와 cipherString을 얻는거 맞나요???
+
+5. 각 모듈의initModule을 EncdDcrpModule에 추상클래스로 두지 않는 이유는  각모듈의 생성자에서 initModule을 호출하기때문,,?인가요 
+initModule을 다 공통으로 가지고 있는데 ...
