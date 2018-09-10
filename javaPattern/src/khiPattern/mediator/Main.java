@@ -1,5 +1,6 @@
 package khiPattern.mediator;
 
+
 /**
  * 
  * 클래스를 단순화하는 패턴 중 facade패턴보다는 조금 클래스화된 패턴이라고 보면 될 것 같습니다.
@@ -23,6 +24,22 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Mediator userMediator = new UserMediator();
+		
+		Colleague user1 = new User("김혠");
+		Colleague user2 = new User("선영");
+		Colleague user3 = new User("현지");
+		
+		user1.setMediator(userMediator);
+		user2.setMediator(userMediator);
+		user3.setMediator(userMediator);
+		
+		userMediator.addColleague(user1);
+		userMediator.addColleague(user2);
+		userMediator.addColleague(user3);
+	
+		user1.setMsg("user1 이다");
+		user1.send();
 	}
 
 }
