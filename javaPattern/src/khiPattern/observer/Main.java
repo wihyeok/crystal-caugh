@@ -8,6 +8,8 @@ package khiPattern.observer;
  * 앞으로 학습하는 방식들은 점점 개선하겠지만 현재는 트렐로로 의견 나눠요~.
  * 화이팅~
  *
+ *
+ *
  */
 
 public class Main {
