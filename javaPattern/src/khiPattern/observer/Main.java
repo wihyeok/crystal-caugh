@@ -10,6 +10,7 @@ package khiPattern.observer;
  *
  *
  *
+ *
  */
 
 public class Main {
