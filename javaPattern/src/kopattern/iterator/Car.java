@@ -1,4 +1,4 @@
-package kopattern;
+package kopattern.iterator;
 
 public class Car {
 	private String model;

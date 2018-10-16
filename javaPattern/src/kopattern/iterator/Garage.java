@@ -1,4 +1,4 @@
-package kopattern;
+package kopattern.iterator;
 
 public class Garage implements Aggregate {
 	private Car[] cars;

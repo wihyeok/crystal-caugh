@@ -1,4 +1,4 @@
-package kopattern;
+package kopattern.iterator;
 
 public class Main {
 	public static void main(String[] args) {

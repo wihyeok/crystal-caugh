@@ -1,4 +1,4 @@
-package kopattern;
+package kopattern.iterator;
 
 public class GarageIterator implements Iterator {
 	private Garage garage; 

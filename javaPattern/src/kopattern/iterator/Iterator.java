@@ -1,4 +1,4 @@
-package kopattern;
+package kopattern.iterator;
 
 // 하나씩 나열하면서 요소에 대한 검색을 실행하는 인터페이스
 // 다음 요소의 존재 여부에 대한 값을 조사하는 hasNext()
